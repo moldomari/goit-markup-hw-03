@@ -1,0 +1,267 @@
+:root {
+  --SLATE: #434455;
+  --IRIS: #4d5ae5;
+  --CLOUD: #f4f4fd;
+  --NAVY-BLUE: #2e2f42;
+  --OCEAN: #404bbf;
+  --CORNFLOWER: #e7e9fc;
+  --WHITE: #ffffff;
+  --text-font-family: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+}
+
+.bodyy {
+  font-family: var(--text-font-family);
+  color: var(--SLATE);
+  background-color: var(--WHITE);
+}
+
+.color3 {
+  color: #f4f4fd;
+}
+
+.logo {
+  font-family: var(--logo-font-family);
+  color: #4d5ae5;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.list {
+  text-decoration: none;
+}
+
+.span {
+  color: #2e2f42;
+}
+
+.section-one {
+  background-color: var(--NAVY-BLUE);
+}
+
+.sectionn-one {
+  list-style: none;
+}
+
+.button-service {
+  font-family: var(--text-font-family);
+  background-color: var(--IRIS);
+  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-service:hover,
+.button-service:focus {
+  background-color: var(--OCEAN);
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--OCEAN);
+  text-decoration: none;
+}
+
+.font-address {
+  font-style: normal;
+}
+
+.adress {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.adress {
+  color: #434455;
+}
+
+.adress:hover,
+.adress:focus {
+  color: var(--OCEAN);
+}
+
+.address-port {
+  font-style: normal;
+}
+
+.psubtitle {
+  color: var(--NAVY-BLUE);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+}
+
+.section {
+  color: var(--SLATE);
+  font-family: var(--text-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.name-person {
+  color: var(--NAVY-BLUE);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  background-color: var(--WHITE, #fff);
+}
+
+.title {
+  color: var(--WHITE);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 107.143%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-color: var(--NAVY-BLUE);
+}
+
+.section-four {
+  background-color: var(--CLOUD);
+}
+
+.subtitle {
+  color: var(--NAVY-BLUE);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: var(--WHITE);
+}
+
+.subtitle-two {
+  color: var(--NAVY-BLUE);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: var(--CLOUD);
+}
+
+.images-section {
+  background-color: #ffffff;
+}
+
+.teamp {
+  background-color: #ffffff;
+}
+
+.pfooter {
+  color: var(--CLOUD);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer {
+  font-family: var(--logo-font-family);
+  color: var(--IRIS);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: var(--NAVY-BLUE);
+  text-decoration: none;
+}
+
+.logoo {
+  color: #4d5ae5;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.spann {
+  font-family: var(--logo-font-family);
+  color: var(--CLOUD);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.titleimage {
+  color: var(--WHITE);
+}
+.titleimage:hover,
+.titleimage:focus {
+  color: var(--WHITE);
+}
+
+.timage {
+  color: var(--NAVY-BLUE);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--NAVY-BLUE);
+}
+
+.subtimage {
+  color: var(--SLATE);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttons {
+  font-family: var(--text-font-family);
+  color: var(--IRIS);
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--CLOUD);
+  cursor: pointer;
+}
+
+.buttons:hover,
+.buttons:focus {
+  color: var(--WHITE);
+  background-color: var(--OCEAN);
+}
+
+.section-list {
+  list-style: none;
+}
