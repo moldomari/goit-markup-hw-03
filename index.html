@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,109 +20,126 @@
     <title>Document</title>
   </head>
   <body class="list bodyy">
-    <header>
-      <nav>
-        <a class="logo link" href="./index.html"
-          >Web<span class="span">Studio</span></a
-        >
+    <header class="header">
+      <div class="container container-header">
+        <nav class="nav">
+          <a class="logo link" href="./index.html"
+            >Web<span class="span">Studio</span></a
+          >
 
-        <ul class="list">
-          <li>
-            <a href="./index.html" class="link nav-link">Studio</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="link nav-link">Portfolio</a>
-          </li>
-          <li><a href="" class="link nav-link">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="list font-address">
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link adress"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="link adress"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+          <ul class="nav-link">
+            <li>
+              <a href="./index.html" class="link header-address">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link header-address"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="link header-address">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="hero-address">
+          <address>
+            <ul class="adress">
+              <li>
+                <a href="mailto:info@devstudio.com" class="phoneemail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="phoneemail"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </header>
+
     <main>
-      <section class="section-one">
-        <h1 class="title">Effective Solutions for Your Business</h1>
-        <button class="button-service" type="button">Order Service</button>
+      <section class="section-one hero-sectionone">
+        <div class="hero-sectionbutton">
+          <h1 class="title">Effective Solutions for Your Business</h1>
+          <button class="button-service hero-botton" type="button">
+            Order Service
+          </button>
+        </div>
       </section>
 
       <section class="list">
-        <h2>Title</h2>
-        <ul class="list">
-          <li>
-            <h3 class="psubtitle">Strategy</h3>
-            <p class="section">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
+        <div class="container">
+          <h2 class="vissualy-hidden">Title</h2>
+          <ul class="list psubtitle-section">
+            <div class="titlesection">
+              <li>
+                <h3 class="psubtitle">Strategy</h3>
+                <p class="section">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
 
-          <li>
-            <h3 class="psubtitle">Punctuality</h3>
-            <p class="section">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
+              <li>
+                <h3 class="psubtitle">Punctuality</h3>
+                <p class="section">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </li>
 
-          <li>
-            <h3 class="psubtitle">Diligence</h3>
-            <p class="section">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
+              <li>
+                <h3 class="psubtitle">Diligence</h3>
+                <p class="section">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
 
-          <li>
-            <h3 class="psubtitle">Technologies</h3>
-            <p class="section">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+              <li>
+                <h3 class="psubtitle">Technologies</h3>
+                <p class="section">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </li>
+            </div>
+          </ul>
+        </div>
       </section>
 
       <section class="list">
         <h2 class="subtitle">What are we doing</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/img1.jpg"
-              alt="computer"
-              width="360"
-              height="300"
-            />
-          </li>
+        <ul class="list images-calc-phonee">
+          <div class="images-calc-phone">
+            <li>
+              <img
+                src="./images/img1.jpg"
+                alt="computer"
+                width="360"
+                height="300"
+              />
+            </li>
 
-          <li>
-            <img
-              src="./images/img2.jpg"
-              alt="Smarthphones"
-              width="360"
-              height="300"
-            />
-          </li>
+            <li>
+              <img
+                src="./images/img2.jpg"
+                alt="Smarthphones"
+                width="360"
+                height="300"
+              />
+            </li>
 
-          <li>
-            <img
-              src="./images/img3.jpg"
-              alt="Display-image"
-              width="360"
-              height="300"
-            />
-          </li>
+            <li>
+              <img
+                src="./images/img3.jpg"
+                alt="Display-image"
+                width="360"
+                height="300"
+              />
+            </li>
+          </div>
         </ul>
       </section>
 

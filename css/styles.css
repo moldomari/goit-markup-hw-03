@@ -10,16 +10,82 @@
   --logo-font-family: "Raleway", sans-serif;
 }
 
+* {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
 .bodyy {
   font-family: var(--text-font-family);
   color: var(--SLATE);
   background-color: var(--WHITE);
 }
 
-.color3 {
-  color: #f4f4fd;
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  background: var(--WHITE);
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  display: flex;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 76px;
+}
+.hero-address {
+  display: flex;
+  gap: 40px;
+  color: var(--SLATE);
+}
+.phoneemail-address {
+  color: var(--SLATE);
+  display: flex;
+  align-items: center;
+}
+.phoneemail {
+  color: var(--SLATE);
+}
+.hero-sectionone {
+  padding: 188px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-sectionbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+.hero-botton {
+  padding: 16px 32px;
+}
+
+/* Logo */
 .logo {
   font-family: var(--logo-font-family);
   color: #4d5ae5;
@@ -29,6 +95,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  background: var(--WHITE);
 }
 
 .list {
@@ -38,13 +105,54 @@
 .span {
   color: #2e2f42;
 }
+/* Hero section */
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0, 32px;
+  text-decoration: none;
+  color: #2e2f42;
+  display: flex;
+  gap: 40px;
+}
 
+.phoneemail:hover,
+.phoneemail:focus {
+  color: var(--OCEAN);
+  text-decoration: none;
+}
+
+.adress {
+  color: var(--SLATE);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
+  display: flex;
+  gap: 40px;
+}
+
+/* Section1 */
 .section-one {
   background-color: var(--NAVY-BLUE);
 }
 
 .sectionn-one {
   list-style: none;
+}
+
+.title {
+  color: var(--WHITE);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  text-align: center;
+  background-color: var(--NAVY-BLUE);
+  max-width: 496px;
 }
 
 .button-service {
@@ -65,45 +173,33 @@
   background-color: var(--OCEAN);
 }
 
-.nav-link {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #2e2f42;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--OCEAN);
-  text-decoration: none;
-}
-
-.font-address {
-  font-style: normal;
-}
-
-.adress {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  font-style: normal;
-}
-
-.adress {
-  color: #434455;
-}
-
-.adress:hover,
-.adress:focus {
-  color: var(--OCEAN);
-}
-
 .address-port {
   font-style: normal;
+}
+/* Section2 */
+.vissualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.psubtitle-section {
+  flex-direction: column;
+  gap: 8px;
+  width: 264px;
+  justify-content: center;
+  display: inline;
+}
+.titlesection {
+  display: flex;
+  gap: 24px;
 }
 
 .psubtitle {
@@ -123,30 +219,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
-.name-person {
-  color: var(--NAVY-BLUE);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  background-color: var(--WHITE, #fff);
-}
-
-.title {
-  color: var(--WHITE);
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 107.143%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  background-color: var(--NAVY-BLUE);
-}
-
-.section-four {
-  background-color: var(--CLOUD);
-}
-
+/* Section3 */
 .subtitle {
   color: var(--NAVY-BLUE);
   font-size: 36px;
@@ -156,6 +229,18 @@
   text-transform: capitalize;
   text-align: center;
   background-color: var(--WHITE);
+}
+.images-calc-phonee {
+  display: inline;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.images-calc-phone {
+  flex-direction: column;
+}
+/* Section4 */
+.section-four {
+  background-color: var(--CLOUD);
 }
 
 .subtitle-two {
@@ -177,12 +262,13 @@
   background-color: #ffffff;
 }
 
-.pfooter {
-  color: var(--CLOUD);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+.name-person {
+  color: var(--NAVY-BLUE);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   letter-spacing: 0.02em;
+  background-color: var(--WHITE, #fff);
 }
 
 .footer {
@@ -196,13 +282,9 @@
   background-color: var(--NAVY-BLUE);
   text-decoration: none;
 }
-
+/* Logo */
 .logoo {
   color: #4d5ae5;
-  text-decoration: none;
-}
-
-.link {
   text-decoration: none;
 }
 
@@ -214,6 +296,41 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.pfooter {
+  font-family: var(--text-font-family);
+  font-weight: 400;
+  color: var(--CLOUD);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  text-transform: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Portfolio */
+
+.button {
+  font-family: var(--text-font-family);
+  color: var(--IRIS);
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--CLOUD);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--WHITE);
+  background-color: var(--OCEAN);
 }
 
 .titleimage {
@@ -242,24 +359,6 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
-}
-
-.buttons {
-  font-family: var(--text-font-family);
-  color: var(--IRIS);
-  border-color: rgba(0, 0, 0, 0);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  background-color: var(--CLOUD);
-  cursor: pointer;
-}
-
-.buttons:hover,
-.buttons:focus {
-  color: var(--WHITE);
-  background-color: var(--OCEAN);
 }
 
 .section-list {
